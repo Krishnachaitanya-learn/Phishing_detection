@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
+        <div class="container">
+          <div class="logo"></div>
+          <div id="brandname">ML</div>
+          <h2>Phishing detection</h2>
+        </div>
+      </header>
+      <div class="ml-container">
+        <p style="color: blue; font-size: 20; text-align: center">
+          <b style="color: #a09494; font-size: 25px">Results</b>
+        </p>
+        <br />
+        <div class="results">
+          {% if prediction == 1%}
+          <h2 style="color: red">Phishing</h2>
+          {% elif prediction == -1%}
+          <h2 style="color: aquamarine">Safe</h2>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
